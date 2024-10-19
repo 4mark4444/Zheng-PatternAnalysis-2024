@@ -1,6 +1,7 @@
 import numpy as np
 import nibabel as nib
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 
 def to_channels(arr: np.ndarray, dtype=np.uint8) -> np.ndarray:
     channels = np.unique(arr)
